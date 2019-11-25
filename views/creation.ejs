@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Nouvelle carte</title>
+  </head>
+  <body>
+    <!-- Utilise une variable utilisateur envoyée par le serveur -->
+    <h1>Nouvelle carte pour <%= utilisateur %></h1>
+    <form action="/<%= utilisateur %>/resultat.html" method="get">
+      <label>Question</label><br />
+      <input type="text" name="question" /><br />
+
+      <label>Réponse</label><br />
+      <input type="text" name="reponse" /><br />
+
+      <button type="submit">Enregistrer</button>
+    </form>
+  </body>
+</html>
